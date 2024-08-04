@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOLTE IMEDIATAMENTE!</title>
+    <link rel="stylesheet" href="sitealt.css">
+    <link rel="icon" href="./images/sangre.ico">
+</head>
+
+<body>
+    <div id="welcome-message">
+        <button id="continue-button">Você quer continuar?</button>
+    </div>
+    <audio id="button-sound" src="./images/error2.mp3"></audio>
+
+    <header>
+        <div class="header-content">
+            <a href="site.html">
+                <section class="logo">
+                    <img src="./images/sangre.ico" alt="LOGO">
+                </section>
+            </a>
+            <nav class="nav-bar">
+                <ul>
+                    <!-- popups -->
+                    <li><a href="./images/popup.png" onclick="playSound(event)">Homem</a></li>
+                    <li><a href="./images/popup.png" onclick="playSound(event)">De</a></li>
+                    <li><a href="./images/popup.png" onclick="playSound(event)">Metas</a></li>
+                    <li><a href="./images/popup.png" onclick="playSound(event)">quer</a></li>
+                    <li><a href="./images/popup.png" onclick="playSound(event)">Destruição</a></li>
+                    <!-- popups -->
+                </ul>
+            </nav>
+            <section class="dark-mode">
+                <button id="dark-mode-toggle">
+                    <a href="./images/popup.png" onclick="playSound(event)">
+                        <img src="./images/darkmode.png" alt="Modo Escuro">
+                    </a>
+                </button>
+            </section>
+        </div>
+    </header>
+
+    <script>
+        function playSound(event) {
+            event.preventDefault();
+            var sound = document.getElementById('button-sound');
+            sound.play();
+        }
+    </script>
+
+
+
+    <main style="display: none;">
+        <div class="caixa-branca2" id="caixa-branca">
+            <img src="./images/ICONEPRINCIPAL.png" alt="Ícone Principal" class="icone-principal">
+            <h1 class="page-title2">Personagens</h1>
+            <p>Curso mergulhar as aqueles profundezas atrevem se encontram pesadelo figuras e mistério, entrelaçados
+                segredos e sombras contos com seus. Uma abismo portas lista para a eventos símbolos assombram jornada
+                nossa, você encontrará aqui.
+
+            </p>
+
+            <div class="venha" id="venha">
+                <h1 class="page-title3">Junte-se a Nós!</h1>
+                <div class="content-container">
+                    <div class="text-content">
+                        <p>Chama a escuridão se unir ao nosso figuras quadro notórias. Contato, se ousar, entre
+                            descobrir como neste labirinto você se perder pode. Histórias e habilidades suas serão
+                            absorvidas pelas sombras que nos cercam.
+
+
+                            <button class="blue__link saiba-mais" onclick="showPopup()">Entre na Lista de
+                                Espera</button>
+                        </p>
+                    </div>
+                    <div class="image-content">
+                        <img src="./images/cruso.png" class="curso" alt="Curso">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="lista-personagens">
+                <h2>Escolares</h2>
+                <hr class="separator">
+                <p>Profundezas nas de escola nossa informática, figuras obscuras e sombrias espreitam. Em neblina
+                    envoltos são contos seus e terror, ambiente um com uma presença inquietante pulsa. Apenas espaço não
+                    educacional é, mas labirinto um de segredos e horrores. Encare o desconhecido e descubra histórias
+                    as que se escondem nas deste lugar amaldiçoado</p>
+            </div>
+
+
+
+
+            <div class="icones">
+                <!-- Escolares -->
+                <div class="icone">
+                    <a href="https://www.youtube.com/watch?v=wp1ZltRNdJs" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/desculpahasao.mp4" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://www.instagram.com/carolmb14?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/jeanzin.jfif" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/Chad.jpg" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/smile.jfif" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/subboss.jpg" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/6x1.png" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/oclin.jpg" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://youtu.be/nk7pxc0s9RA?feature=shared" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/merda.jpg" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/hablei.webp" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/vai.png" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/careco.mp4" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+
+                <!-- novos -->
+                <div class="icone">
+                    <a href="https://www.instagram.com/kauacamposz/?utm_source=ig_web_button_share_sheet"
+                        target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://www.instagram.com/figsfigss/?utm_source=ig_web_button_share_sheet" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://www.instagram.com/jos3_4ugustowzz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://youtu.be/8--Os4fRv4A?si=eqQhbxZFagZsCDCf" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://www.instagram.com/p/C-P6kN9Rn0q/?utm_source=ig_web_copy_link" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://www.google.com/search?client=opera-gx&hs=ks2&sca_esv=f7839580003801af&sca_upv=1&sxsrf=ADLYWIIKOOUyiW3hXx6f-5F1LloURZP1Lg:1722787297634&q=daronco&udm=2&fbs=AEQNm0AuaLfhdrtx2b9ODfK0pnmi046uB92frSWoVskpBryHTpm4Flwlr5cHTE9P1oWvlAZG1j4VZSGD_ZOPgNtbY0qbLn5oa9sC_mgH-BzgdrTwRaT5ZjkgJRz5mLoDET1f2LCDwHDVfUK_o-Hl5UGRscLKfT7Rf8aFcZhrETIgvD8xtzuquDCATR2NzMPDlsnKO_iPy3q7l6Tgjga7ZoVxet57bthYcw&sa=X&ved=2ahUKEwjPsJjn2tuHAxX5GbkGHUHODnIQtKgLegQIEhAB&biw=1485&bih=799&dpr=1#vhid=bM5d7CABSoNaoM&vssid=mosaic"
+                        target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/vsd.jfif" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://www.instagram.com/arthurfreitas201?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://www.instagram.com/asafe_fps?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://www.instagram.com/raynneluchi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://www.google.com/search?q=pelé+branco&client=opera-gx&hs=eaN&sca_esv=f7839580003801af&sca_upv=1&udm=2&biw=1485&bih=799&sxsrf=ADLYWIJ3DsY8upB-Y_yshswer2E7FgdDEg%3A1722787453415&ei=faavZrKKGYbC5OUP5I39CA&ved=0ahUKEwjyvLyx29uHAxUGIbkGHeRGHwEQ4dUDCBE&uact=5&oq=pelé+branco&gs_lp=Egxnd3Mtd2l6LXNlcnAiDHBlbMOpIGJyYW5jbzIFEAAYgAQyBRAAGIAEMgYQABgHGB4yBhAAGAcYHkjdC1DmBlj3CXABeACQAQCYAZgCoAGOA6oBBTAuMS4xuAEDyAEA-AEBmAIDoAKiA8ICChAAGIAEGEMYigWYAwCIBgGSBwUxLjEuMaAHsQc&sclient=gws-wiz-serp"
+                        target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://www.instagram.com/nico.fmc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/pato.jfif" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://www.google.com/search?q=serjio+ramos+anao&client=opera-gx&hs=NHi&sca_esv=2f680bfae624bb75&sca_upv=1&udm=2&biw=1485&bih=799&sxsrf=ADLYWILx-SFiL3smOlew4jJ7OORpeAPAHw%3A1722787541800&ei=1aavZr_MMN_A5OUPo6jDqAg&ved=0ahUKEwj_is_b29uHAxVfILkGHSPUEIUQ4dUDCBE&uact=5&oq=serjio+ramos+anao&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXNlcmppbyByYW1vcyBhbmFvSNMRUOUKWJsQcAB4AJABAJgBlwKgAawHqgEFMC41LjG4AQPIAQD4AQGYAgKgAt4DwgIEECMYJ8ICBBAAGB6YAwDiAwUSATEgQIgGAZIHBTAuMS4xoAfgAw&sclient=gws-wiz-serp#vhid=EMXN6P1kMJkR0M&vssid=mosaic"
+                        target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+
+
+                <!-- mais -->
+            </div>
+
+            <div class="lista-personagens">
+                <h2>Alternativos e Secretos</h2>
+                <hr class="separator">
+                <p>destacam-se que e peculiar mais são seres do personagens as descubra enigmática trevas Natureza nas e
+                    Simples entidades que estes Entre. </p>
+            </div>
+
+            <div class="icones">
+                <div class="icone">
+                    <a href="./images/subboss.jpg" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/protago.jpg" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/rough.jpg" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/maxresdefault.jpg" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://www.youtube.com/watch?v=dgLUZdeyST0" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://www.youtube.com/shorts/jn17idNcdho" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://www.youtube.com/shorts/jLvLJ5VDM6s" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/rachadores.mp4" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/carti.jpg" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://drive.google.com/file/d/1CocOouOl2G4_lBQTkusVf04jc5bTOGAd/view?usp=sharing"
+                        target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/ballon.jpeg" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/doenca.mp4" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/tulio alt.jpeg" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/kkkkkkkk.png" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://www.youtube.com/watch?v=ZAGVM3JTswo" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/MDS.jfif" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://www.youtube.com/watch?v=H58vbez_m4E" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/manyman.mp4" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/bit.jfif" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://www.tiktok.com/@eleotann/video/7228678093135695109" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/vadio.jfif" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/gunpo.jfif" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/vitor.mp4" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/cringe.mp4" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/demencia.jpeg" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/maldito.mp4" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/risonho.mp4" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://hackertyper.net" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/amor.enc" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="./images/comico.jpeg" target="_blank">
+                        <img src="./images/666.jpg" Ícone 3" width="50" height="50">
+                    </a>
+                </div>
+
+
+
+
+
+
+
+                <!-- mais -->
+            </div>
+
+            <div class="lista-personagens">
+                <h2>Rei/Deus</h2>
+                <hr class="separator">
+                <p>Veja e me aprecie seu Deus, eu O HOMEM DE METAS de informatica.</p>
+            </div>
+
+            <div class="icones">
+                <div class="icone">
+                    <a id="fechar-botao" href="#">
+                        <img alt="Ícone 10" src="./images/metas.jfif" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a id="fechar-botao" href="#">
+                        <img alt="Ícone 10" src="./images/metas.jfif" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a id="fechar-botao" href="#">
+                        <img alt="Ícone 10" src="./images/metas.jfif" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a id="fechar-botao" href="#">
+                        <img alt="Ícone 10" src="./images/metas.jfif" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a id="fechar-botao" href="#">
+                        <img alt="Ícone 10" src="./images/metas.jfif" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a id="fechar-botao" href="#">
+                        <img alt="Ícone 10" src="./images/metas.jfif" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a id="fechar-botao" href="#">
+                        <img alt="Ícone 10" src="./images/metas.jfif" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a id="fechar-botao" href="#">
+                        <img alt="Ícone 10" src="./images/metas.jfif" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a id="fechar-botao" href="#">
+                        <img alt="Ícone 10" src="./images/metas.jfif" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a id="fechar-botao" href="#">
+                        <img alt="Ícone 10" src="./images/metas.jfif" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a id="fechar-botao" href="#">
+                        <img alt="Ícone 10" src="./images/metas.jfif" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a id="fechar-botao" href="#">
+                        <img alt="Ícone 10" src="./images/metas.jfif" width="50" height="50">
+                    </a>
+                </div>
+                <div class="icone">
+                    <a id="fechar-botao" href="#">
+                        <img alt="Ícone 10" src="./images/metas.jfif" width="50" height="50">
+                    </a>
+                </div>
+                
+
+                <!-- mais -->
+
+
+            </div>
+
+        </div>
+
+        </div>
+    </main>
+    <audio id="background-music" src="./images/terror.mp3" loop></audio>
+    <audio id="error-sound" src="./images/error2.mp3"></audio>
+
+    <script src="scriptalt.js"></script>
+</body>
+
+</html>
