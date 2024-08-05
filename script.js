@@ -1,3 +1,90 @@
+document.getElementById('save-selection').addEventListener('click', function() {
+    const goalkeeper = document.getElementById('goalkeeper').value;
+    const player1 = document.getElementById('player1').value;
+    const player2 = document.getElementById('player2').value;
+    const player3 = document.getElementById('player3').value;
+    const player4 = document.getElementById('player4').value;
+
+    localStorage.setItem('goalkeeper', goalkeeper);
+    localStorage.setItem('player1', player1);
+    localStorage.setItem('player2', player2);
+    localStorage.setItem('player3', player3);
+    localStorage.setItem('player4', player4);
+
+    updatePlayerDisplay('goalkeeper', goalkeeper);
+    updatePlayerDisplay('player1', player1);
+    updatePlayerDisplay('player2', player2);
+    updatePlayerDisplay('player3', player3);
+    updatePlayerDisplay('player4', player4);
+});
+
+function updatePlayerDisplay(position, playerId) {
+    const playerNames = {
+        1: { name: 'Luis', img: './images/luis.png' },
+        2: { name: 'N/A', img: './images/placeholder.png' },
+        3: { name: 'Otavio', img: './images/otavio.png' },
+        4: { name: 'Samuel', img: './images/samuel.png' },
+        5: { name: 'Raphael', img: './images/raphael.png' },
+        6: { name: 'Leandro', img: './images/leandro.png' },
+        7: { name: 'Gabriel Cezar', img: './images/gabriel_cezar.png' },
+        8: { name: 'Hike', img: './images/hike.png' },
+        9: { name: 'Thiers', img: './images/thiers.png' },
+        10: { name: 'Mateus Tertuliano', img: './images/mateus_tertuliano.png' }
+    };
+
+    const positionMap = {
+        goalkeeper: 'goalkeeper-position',
+        player1: 'player1-position',
+        player2: 'player2-position',
+        player3: 'player3-position',
+        player4: 'player4-position'
+    };
+
+    const player = playerId ? playerNames[playerId] : { name: 'Nenhum Selecionado', img: './images/placeholder.png' };
+    document.getElementById(positionMap[position]).style.backgroundImage = `url(${player.img})`;
+}
+document.addEventListener('DOMContentLoaded', function() {
+    const playerSelects = document.querySelectorAll('.player-select');
+    const positions = {
+        goalkeeper: document.getElementById('goalkeeper-position'),
+        player1: document.getElementById('player1-position'),
+        player2: document.getElementById('player2-position'),
+        player3: document.getElementById('player3-position'),
+        player4: document.getElementById('player4-position')
+    };
+
+    function updatePositions() {
+        for (let key in positions) {
+            const select = document.getElementById(key);
+            const selectedOption = select.options[select.selectedIndex];
+            const image = selectedOption.getAttribute('data-image');
+            const playerImage = image ? image : './images/placeholder.png'; 
+            positions[key].style.backgroundImage = `url(${playerImage})`;
+        }
+    }
+
+    function restoreSelection() {
+        const goalkeeper = localStorage.getItem('goalkeeper');
+        const player1 = localStorage.getItem('player1');
+        const player2 = localStorage.getItem('player2');
+        const player3 = localStorage.getItem('player3');
+        const player4 = localStorage.getItem('player4');
+
+        document.getElementById('goalkeeper').value = goalkeeper || '';
+        document.getElementById('player1').value = player1 || '';
+        document.getElementById('player2').value = player2 || '';
+        document.getElementById('player3').value = player3 || '';
+        document.getElementById('player4').value = player4 || '';
+
+        updatePositions();
+    }
+
+    playerSelects.forEach(select => {
+        select.addEventListener('change', updatePositions);
+    });
+
+    restoreSelection();
+});
 function playSound(event) {
     event.preventDefault();
     

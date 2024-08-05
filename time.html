@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INF1A | Time</title>
+    <link rel="stylesheet" href="site.css">
+    <link rel="icon" href="./images/sadsadad.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="site.html">
+                <section class="logo">
+                    <img src="./images/icone.png" alt="LOGO">
+                </section>
+            </a>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="site.html">Início</a></li>
+                    <li><a href="informacoes.html">Informações</a></li>
+                    <li><a href="personagens.html">Personagens</a></li>
+                    <li><a href="musicas.html">Músicas</a></li>
+                    <li class="dropdown">
+                        <a href="site.html">Futebol</a>
+                        <div class="dropdown-content">
+                            <a href="time.html">Time</a>
+                            <a href="jogos.html">Jogos</a>
+                            <a href="camisas.html">Camisas</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <section class="dark-mode">
+                <button id="dark-mode-toggle">
+                    <img src="./images/darkmode.png" alt="Modo Escuro">
+                </button>
+            </section>
+        </div>
+    </header>
+
+    <main id="time">
+        <div class="icon-container">
+        </div>
+        <div class="caixa-branca" id="caixa-branca">
+            <div class="header">
+                <h1 class="page-header__title">Escalação do Time</h1>
+            </div>
+            
+            <div class="faixa-azul"></div>
+
+            <section class="team-selection">
+                <h2>Selecione a Escalação</h2>
+                <div class="team-positions">
+                    <div class="position">
+                        <h3>Goleiro</h3>
+                        <select id="goalkeeper" class="player-select">
+                            <option value="">Selecione o Goleiro</option>
+                            <option value="1" data-image="./images/luis.png">Luis</option>
+                            <option value="2" data-image="./images/placeholder.png">N/A</option>
+                        </select>
+                    </div>
+                    <div class="position">
+                        <h3>Fixo</h3>
+                        <select id="player1" class="player-select">
+                            <option value="">Selecione o Jogador</option>
+                            <option value="1" data-image="./images/guilherme.png">Guilherme</option>
+                            <option value="2" data-image="./images/otavio.png">Otavio</option>
+                            <option value="3" data-image="./images/samuel.png">Samuel</option>
+                            <option value="4" data-image="./images/raphael.png">Raphael</option>
+                            <option value="5" data-image="./images/leandro.png">Leandro</option>
+                        </select>
+                    </div>
+                    <div class="position">
+                        <h3>Ala Esquerda</h3>
+                        <select id="player2" class="player-select">
+                            <option value="">Selecione o Jogador</option>
+                            <option value="6" data-image="./images/gabriel_cezar.png">Gabriel Cezar</option>
+                            <option value="1" data-image="./images/guilherme.png">Guilherme</option>
+                            <option value="5" data-image="./images/leandro.png">Leandro</option>
+                            <option value="7" data-image="./images/hike.png">Hike</option>
+                            <option value="10" data-image="./images/thiers.png">Thiers</option>
+                        </select>
+                    </div>
+                    <div class="position">
+                        <h3>Ala Direita</h3>
+                        <select id="player3" class="player-select">
+                            <option value="">Selecione o Jogador</option>
+                            <option value="6" data-image="./images/gabriel_cezar.png">Gabriel Cezar</option>
+                            <option value="1" data-image="./images/guilherme.png">Guilherme</option>
+                            <option value="5" data-image="./images/leandro.png">Leandro</option>
+                            <option value="7" data-image="./images/hike.png">Hike</option>
+                            <option value="10" data-image="./images/thiers.png">Thiers</option>
+                        </select>
+                    </div>
+                    <div class="position">
+                        <h3>Pivo</h3>
+                        <select id="player4" class="player-select">
+                            <option value="">Selecione o Jogador</option>
+                            <option value="9" data-image="./images/mateus_tertuliano.png">Mateus Tertuliano</option>
+                            <option value="6" data-image="./images/gabriel_cezar.png">Gabriel Cezar</option>
+                            <option value="10" data-image="./images/thiers.png">Thiers</option>
+                            <option value="7" data-image="./images/hike.png">Hike</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="save-selection"> </button>
+            </section>
+            <div class="faixa-azul"></div>
+            
+            <section class="field-container">
+                <img src="./images/campo.png" alt="Campo" class="field-image">
+                <div id="goalkeeper-position" class="player-position"></div>
+                <div id="player1-position" class="player-position"></div>
+                <div id="player2-position" class="player-position"></div>
+                <div id="player3-position" class="player-position"></div>
+                <div id="player4-position" class="player-position"></div>
+            </section>
+            
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

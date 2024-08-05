@@ -754,3 +754,93 @@ iframe:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.field-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.field-image {
+    width: 100%;
+    height: auto;
+}
+
+.player-position {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+#goalkeeper-position {
+    top: 10%; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#player1-position {
+    top: 40%; 
+    left: 43%;
+}
+
+#player2-position {
+    top: 50%; 
+    left: 10%;
+}
+
+#player3-position {
+    top: 50%; 
+    right: 10%;
+}   
+
+#player4-position {
+    top: 80%; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+.player-select {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.team-selection h2 {
+    font-size: 29px;
+    color: cadetblue;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 1px rgb(27, 27, 29);
+    font-family: glbOpenSans, "Open Sans", "Avenir Next", Avenir, Inter, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Arial, Noto, Ubuntu, "Segoe UI", sans-serif;
+}
+
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+#dark-mode-toggle img {
+    width: 30px;
+    height: auto;
+}
+
+#dark-mode-toggle:hover {
+    opacity: 0.7;
+}
+.player-position:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+[data-theme="dark"]h3{
+    color: wheat;
+
+}
+
