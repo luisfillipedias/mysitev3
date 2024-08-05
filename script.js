@@ -1,22 +1,4 @@
-document.getElementById('save-selection').addEventListener('click', function() {
-    const goalkeeper = document.getElementById('goalkeeper').value;
-    const player1 = document.getElementById('player1').value;
-    const player2 = document.getElementById('player2').value;
-    const player3 = document.getElementById('player3').value;
-    const player4 = document.getElementById('player4').value;
 
-    localStorage.setItem('goalkeeper', goalkeeper);
-    localStorage.setItem('player1', player1);
-    localStorage.setItem('player2', player2);
-    localStorage.setItem('player3', player3);
-    localStorage.setItem('player4', player4);
-
-    updatePlayerDisplay('goalkeeper', goalkeeper);
-    updatePlayerDisplay('player1', player1);
-    updatePlayerDisplay('player2', player2);
-    updatePlayerDisplay('player3', player3);
-    updatePlayerDisplay('player4', player4);
-});
 
 function updatePlayerDisplay(position, playerId) {
     const playerNames = {
@@ -182,5 +164,24 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.error('Elemento com ID "menu-container" não encontrado.');
     }
+});
+document.getElementById('saves').addEventListener('click', function() {
+    const goalkeeper = document.getElementById('goalkeeper').value;
+    const player1 = document.getElementById('player1').value;
+    const player2 = document.getElementById('player2').value;
+    const player3 = document.getElementById('player3').value;
+    const player4 = document.getElementById('player4').value;
+
+    localStorage.setItem('goalkeeper', goalkeeper);
+    localStorage.setItem('player1', player1);
+    localStorage.setItem('player2', player2);
+    localStorage.setItem('player3', player3);
+    localStorage.setItem('player4', player4);
+
+    updatePlayerDisplay('goalkeeper', goalkeeper);
+    updatePlayerDisplay('player1', player1);
+    updatePlayerDisplay('player2', player2);
+    updatePlayerDisplay('player3', player3);
+    updatePlayerDisplay('player4', player4);
 });
 
