@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(54, 99, 182);
+    margin: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+#logomarca {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+}
+
+img, iframe {
+    display: block;
+    margin: 20px auto;
+}
+
+h1 {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    color: rgb(229, 255, 0);
+    text-align: center;
+}
+
+h2 {
+    color: orange;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+
+ul, ol {
+    color: rgb(157, 255, 0);
+}
+
+a:link {
+    color: rgb(157, 255, 0);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(0, 255, 0);
+}
+
+a:hover {
+    color: rgb(255, 255, 0);
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(255, 0, 0);
+}
+
+a[href^="http://"], a[href^="https://"] {
+    background-image: url('img/globo.png');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 16px 16px;
+}
+
+.nota {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nota strong {
+    color: #FF5722;
+}
+
+.passo strong {
+    font-size: 24px;
+    color: #FF5722;
+    background-color: #FFF3E0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.passo em {
+    font-size: 18px;
+}
+
+p:nth-of-type(odd) {
+    text-align: left;
+}
+
+p:nth-of-type(even) {
+    text-align: right;
+}
+
+img:hover {
+    transform: scale(1.025);
+    transition: 0.5s;
+}
+
+ul {
+    width: 250px;
+    margin: 0 auto;
+}
+
+ol {
+    width: 150px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+img:not([alt]) {
+    border: 2px solid red;
+}
